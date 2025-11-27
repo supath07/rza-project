@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            background: #f9f9f9;
+            padding: 20px 24px;
+            box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            height: 80px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 80px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        span {
+            padding: 12px;
+        }
+
+        .dropdown:hover > span {
+            background-color: #3e8e41;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../assets/images/logo.png" alt="" style="width: 60px; height: 60px;"></a>
+        
+        <ul class="nav-links">
+            <li class="dropdown">
+                <span>Visit</span>
+                <div class="dropdown-content">
+                    <a href="#">Zoo Tickets</a>
+                    <a href="#">Daily Schedule</a>
+                    <a href="#">Visitor Map</a>
+                    <a href="#">Food & Cafe</a>
+                    <a href="#">Parking & Toilets</a>
+                    <a href="#">Contact/Help</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <span>Stay</span>
+                <div class="dropdown-content">
+                    <a href="#">Hotel Information</a>
+                    <a href="#">Room Types</a>
+                    <a href="#">Prices</a>
+                    <a href="#">Check Availability</a>
+                    <a href="#">Book a Stay</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <span>Education</span>
+                <div class="dropdown-content">
+                    <a href="#">School Trip Information</a>
+                    <a href="#">Worksheets</a>
+                    <a href="#">Resources</a>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <span>Accessibility</span>
+                <div class="dropdown-content">
+                    <a href="#">Policy</a>
+                    <a href="#">Wheelchair Accessibility</a>
+                    <a href="#">Accessible Toilets</a>
+                    <a href="#">Parking Access</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <span>Account</span>
+                <div class="dropdown-content">
+                    <a href="#">Register</a>
+                    <a href="#">Sign in</a>
+                    <a href="#">My Bookings</a>
+                    <a href="#">Loyalty Points</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+</body>
+</html>

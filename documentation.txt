@@ -1,0 +1,109 @@
+Project- RZA
+
+
+Colour Palette--->
+#16441A
+#F4FDAF
+#FFFFFF
+#394F49
+#2F7864
+#9FAB44
+#F9F9F9
+#65743A
+
+Navigation links (Header)--->
+
+Home-- Logo link
+
+Visit
+|---Zoo Tickets
+    Daily Schedule
+    Visitor Map
+    Food & Cafe
+    Parking & Toilets
+    Contact/Help
+
+Stay
+|---Hotel Information
+    Room Types
+    Prices
+    Check Availability
+    Book a Stay
+
+Education
+|---School Trip Information 
+    Worksheets (Dwdable pdf)
+    Resources
+
+Accessibility
+|---Policy
+    Wheelchair Accessibility   
+    Accessible Toilets
+    Parking Access
+
+Account
+|---Register
+    Sign in
+    My Bookings
+    Loyalty Points
+
+
+Folder Structure---->
+
+rza-project/
+|
+|---index.php    <-- Homepage
+|
+|---visit/
+    --tickets.php
+    --schedule.php
+    --map.php
+    --food-cafe.php
+    --parking.php
+    --contact.php
+|
+|---stay/
+    --hotel-info.php
+    --room-types.php
+    --prices.php
+    --availability.php
+    --book-stay.php
+|
+|---education/
+    --school-info.php
+    --worksheets.php 
+    --resources.php
+|
+|---accessibility/
+    --policy.php
+    --wheelchair.php
+    --accessible-toilets.php
+    --parking-access.php
+|
+|---account/
+    --register.php
+    --login.php
+    --bookings.php
+    --loyalty.php
+|
+|---assets/
+    |--css/
+        --style.css
+        --style2.css
+    |--js/
+        --main.js
+        --menu.js
+        --slider.js
+    |--images/
+        --animals/
+        --hotel/
+        --icons/
+|
+|---components/
+    --header.php
+    --footer.php
+|
+|---includes/
+    --nav.php
+    --con.php
+    
