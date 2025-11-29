@@ -1,0 +1,179 @@
+/* Homepage-specific styles for Riget Zoo Adventures */
+
+.hero {
+    background: linear-gradient(135deg, rgba(22, 68, 26, 0.9), rgba(47, 120, 100, 0.8)),
+                url('/assets/images/zoo-image1.jpg') center/cover no-repeat;
+    border-radius: 22px;
+    color: var(--white);
+    padding: 3.5rem 3rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.16);
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(244, 253, 175, 0.18), transparent 35%),
+                radial-gradient(circle at 80% 30%, rgba(159, 171, 68, 0.15), transparent 40%);
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.hero p {
+    max-width: 720px;
+    font-size: 1.05rem;
+    margin: 0.2rem 0 0;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.4rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.75rem 1.1rem;
+    border-radius: 12px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: var(--olive);
+    color: var(--forest);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--forest);
+    border: 2px solid var(--forest);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-primary:focus,
+.btn-secondary:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hero-list {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-list li {
+    background: rgba(255, 255, 255, 0.16);
+    padding: 0.55rem 0.8rem;
+    border-radius: 10px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1rem;
+}
+
+.section-title h2 {
+    margin: 0;
+    color: var(--forest);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    background: rgba(47, 120, 100, 0.15);
+    color: var(--forest);
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 1.2rem;
+    border-radius: 14px;
+    border: 1px solid rgba(25, 68, 26, 0.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--forest);
+}
+
+.card p {
+    margin: 0.4rem 0 0.8rem;
+}
+
+.card .link-inline {
+    font-weight: 700;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-list {
+    list-style: disc;
+    padding-left: 1.1rem;
+    margin: 0.5rem 0 0;
+}
+
+.callout {
+    background: var(--lemon);
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    color: var(--forest);
+    border: 1px solid rgba(25, 68, 26, 0.1);
+}
+
+.highlight {
+    background: rgba(159, 171, 68, 0.2);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2.5rem 1.8rem;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

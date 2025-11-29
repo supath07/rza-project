@@ -1,0 +1,30 @@
+.highlight {
+    background: rgba(159, 171, 68, 0.2);
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    background: rgba(47, 120, 100, 0.15);
+    color: var(--forest);
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.hero-list {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-list li {
+    background: rgba(255, 255, 255, 0.16);
+    padding: 0.55rem 0.8rem;
+    border-radius: 10px;
+}
